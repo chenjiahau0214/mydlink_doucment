@@ -1,4 +1,4 @@
-在本機建立ssh-key教學
+﻿在本機建立ssh-key教學
 https://help.github.com/articles/generating-ssh-keys
 
 Mydlink V2
@@ -10,3 +10,6 @@ sf path: /home/felix/HTML/lib/vendor/symfony/data/bin
 My V2 Dev
 Url: http://ivan.dev.mydlink.com
 開發帳密：mydlinker@gmail.com/123321
+
+重組
+optimized js/css=>./symfony optimize:assets --type=all --env=prod frontend

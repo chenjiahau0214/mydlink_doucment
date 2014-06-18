@@ -1,0 +1,61 @@
+﻿Camera(DCS-522L)
+yml:apps/config/DCS-5222L
+    nipca_enabled
+	firmware_upgrade_manual_path
+    firmware_list
+	firmware_upgrade
+	download->firmware
+	        ->wizard
+			->UM
+			->QIG
+	PTZ_enable
+	contact_us
+	factory_reset_command
+	device_password_encryption
+	device_module
+	
+yml:plugins/mydlinkDevicesPlugin/config/feature_mapping.yml
+
+get tab
+url:https://ivan.dev.mydlink.com/device/DCS-5222L/30714339/zh_TW/index
+yml:plugins/mydlinkDevicesPlugin/config/models/DCS-5222L.yml
+    common->image_url
+	      ->sd_card
+		  ->cgi_version
+    layout->liveview->liveview_player->player
+	                                 ->brightness
+									 ->zoom 
+									 ->sound
+                                     ->snapshot
+                                     ->fullscreen
+                                     ->nightview
+                                     ->twoway
+                                     ->pantilt
+                                     ->status
+                                     ->resolution									 
+	      ->sd_card->playback
+		  ->camerSet->general->general_info
+					->notification->email_notification
+					->trigger_event->event_wizard
+					->more_settings->sdcard_full
+         					       ->remote_access_enable
+                                   ->delete_device
+								   
+get liveview
+url:https://ivan.dev.mydlink.com/device/DCS-5222L/30714339/zh_TW/liveview
+template:liveview2
+js:                  product                        develop
+   liveview          liveview2-all.js               liveview.js
+                                                    liveview/theme2/liveview.js
+													  liveview/theme2/brightness.js
+													    liveview/brightness.js(init、change)
+													  ...
+													    ...
+    liveview_theeme  liveview/theme2                liveview/theme2
+
+get sd_card
+url:https://ivan.dev.mydlink.com/frontend_dev.php/device/DCS-5222L/30714339/zh_TW/NIPCAPlayback
+js:jquery.mydlink.playback.clip.js(init、search、download)
+
+get camerSet
+url:https://ivan.dev.mydlink.com/frontend_dev.php/device/DCS-5222L/30714339/zh_TW/cameraSet
