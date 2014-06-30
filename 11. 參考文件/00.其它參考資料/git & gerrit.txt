@@ -1,0 +1,21 @@
+gerrit: 
+●checkout remote branch 
+ git checkout -b v246p2 origin/v246p2
+●cherry pick
+ 先切至target branch(如要把v247 commit copy至v246，target branch為v246)
+ git pull
+ git cherry-pick -e 8dd4f5414997b82ed44e81e839d9c2bd24212 //V247的change_id
+ git commit --amend
+ git push origin HEAD:refs/for/v246p2
+
+git  
+●checkout remote branch 
+ git fetch origin
+ git branch v200 origin/v200
+ git checkout v200
+●建立分支下的分支
+ git checkout -b v101 origin/v100
+ git push origin v100:v101
+●cherry pick 
+ git cherry-pick -e 8dd4f5414997b82ed44e81e839d9c2bd24212 //commit id
+ git push

@@ -1,0 +1,60 @@
+﻿mObject
+control applet or activity
+load: load applet or activex
+
+$mConnector
+do connect to device，use applet or activex，init tsa
+connect: do connect to tsa
+
+mDevice
+control device to connect tsa
+init: abort tsa
+select: when change device, call it to get now status , flash update device list
+update_device_list: call by select
+unbind: remove device, call tsa to del device
+camera: define live view
+
+mAjax
+control ajax
+abortPage: abort each ajax object
+pageSend: send request
+
+$mWget
+create a http request to send tsa get data
+req: send request
+abort: abort request
+abort_all: abort all request
+remove_req: clear request data
+
+$mDCP
+send dcp command to tsa
+req: send request
+
+mBrowser
+check what browser is and version
+
+$mDebug
+control debug window
+init: init debug window
+show: show debug window
+appendLog: write to debug log
+
+$mDcanvas
+control page view 
+loadContent: load content from device_page
+TabBox: control lightbox
+
+$mUtil
+some tools
+getPageSize
+getMouseCoor
+getBytes
+
+$mDom
+control dom、css
+
+$mUser
+get user profile
+
+
+ 
