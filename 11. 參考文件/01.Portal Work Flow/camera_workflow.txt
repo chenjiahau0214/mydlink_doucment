@@ -51,7 +51,7 @@ js:                  product                        develop
 													    liveview/brightness.js(init、change)
 													  ...
 													    ...
-    liveview_theeme  liveview/theme2                liveview/theme2
+    liveview_theme  liveview/theme2                liveview/theme2
 
 get sd_card
 url:https://ivan.dev.mydlink.com/frontend_dev.php/device/DCS-5222L/30714339/zh_TW/NIPCAPlayback

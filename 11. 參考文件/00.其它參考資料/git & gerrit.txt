@@ -1,4 +1,6 @@
 gerrit: 
+¡´§ó·sremote & local fetch
+ git fetch
 ¡´checkout remote branch 
  git checkout -b v246p2 origin/v246p2
 ¡´cherry pick
