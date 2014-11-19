@@ -4,5 +4,5 @@ Ivan_Chen@dlink.com.tw / 280422mydlink
 resolve message
 1. root casue: update the logo for SmartPlug(DSP-W110)
 2. fix: update java plugin
-2. github/Chnge-ID: c89d9cd29475dc5dd3822c3f8448e0ece003ce10
+2. Change-ID: 
 3. will apply to v246-rc1-fix1

@@ -2,13 +2,20 @@ gerrit:
 ●更新remote & local fetch
  git fetch
 ●checkout remote branch 
- git checkout -b v246p2 origin/v246p2
+ git checkout -b v247-patch1 origin/v247-patch1
 ●cherry pick
  先切至target branch(如要把v247 commit copy至v246，target branch為v246)
  git pull
- git cherry-pick -e 8dd4f5414997b82ed44e81e839d9c2bd24212 //V247的change_id
+ git cherry-pick -e 8dd4f5414997b82ed44e81e839d9c2bd24212 //V247的commit id
  git commit --amend
- git push origin HEAD:refs/for/v246p2
+ git push origin HEAD:refs/for/{TARGET_BRANCH}
+●有衝突
+  git reset --hard HEAD~?
+  git pull --rebase
+  git cherry-pick -e 8dd4f5414997b82ed44e81e839d9c2bd24212
+  git commit --amend ~  去掉conflict line
+  git push origin HEAD:refs/for/ces2015
+  
 
 git  
 ●checkout remote branch 

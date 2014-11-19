@@ -1,6 +1,7 @@
 ﻿rebuild liveview cmd
 
-/web/js/device/r.js -o build1.js
-/web/js/device/r.js -o build2.js
+cd web/js/device
+r.js -o build1.js
+r.js -o build2.js
 
 

@@ -1,0 +1,1 @@
+﻿./symfony optimize:assets --type=all --env=prod frontend
