@@ -1,0 +1,13 @@
+無SD card [DCS-932L為例]
+
+Device bootcode have a small web server for F/W download, its IP address is 192.168.0.20 
+Step:
+1.Power on DCS-932L, and wait 10 seconds
+2.Use Windows XP and IE, access 192.168.0.20 (your PC’s IP address must be 192.168.0.x)
+3.A download screen will be displayed.
+4.Select DCS-932L F/W and press download button to start F/W download
+
+有SD card [DCS-2310L為例]
+1.在SD CARD上建立一個資料夾”upgrade”
+2.下載最新的FW  FW路徑: Http://www.approtech.com/download/DCS-2310L_FW_V1.00.03.rar
+3.將FW DCS-2310L_FW_V1.00.03.bin Rename 成 update.bin 放入Upgrade資料夾中

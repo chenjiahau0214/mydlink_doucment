@@ -1,0 +1,38 @@
+console建立tag
+	git tag -am "rdqa-2.7.0.7" rdqa-2.7.0.7
+        git tag -l | grep rdqa
+	git push origin rdqa-2.7.0.7
+	到gerrit檢查tag
+
+Jenkins(10.32.101.11:8080/)
+	BUILD_VER: 2.7.0.4
+	....
+
+\\10.32.38.1    
+
+進rdqa.mydlink.com
+	把rpm跟md5丟進去
+
+        cat xxx.rpm.md5
+        md5sum xxx.rpm
+
+	/bin/cp /mydlink/portal/apps/frontend/config/mydlink/autodeploy/server.yml /tmp/server.yml.bak
+	/bin/cp /mydlink/portal/config/databases.yml /tmp/databases.yml.bak
+	
+	ls -al /tmp/server.yml.bak /tmp/databases.yml.bak
+
+	rpm -Uvh --force portal-xxxxx
+
+	/bin/cp -f /tmp/server.yml.bak /mydlink/portal/apps/frontend/config/mydlink/autodeploy/server.yml
+	/bin/cp -f /tmp/databases.yml.bak /mydlink/portal/config/databases.yml
+
+	chmod -R 750 /mydlink/portal &&
+	chmod -R 770 /mydlink/portal/cache &&
+	chmod -R 770 /mydlink/portal/log &&
+	chmod 755 /mydlink/portal/init.d/portal &&
+	chown webuser:daemon -R /mydlink/portal/
+
+	/etc/init.d/portal restart
+
+        
+/etc/init.d/portal restart

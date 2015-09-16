@@ -1,0 +1,5 @@
+Step1: open dcp tools, and type the command, run it
+ex: S;M=28:10:7b:1f:20:91;D=DCS-7000L;C=telnetd
+
+Step2: open putty, login to the device
+root/hi3518c

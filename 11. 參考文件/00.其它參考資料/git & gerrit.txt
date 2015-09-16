@@ -12,9 +12,10 @@ gerrit:
 ¡´¦³½Ä¬ð
   git reset --hard HEAD~?
   git pull --rebase
-  git cherry-pick -e 8dd4f5414997b82ed44e81e839d9c2bd24212
-  git commit --amend ~  ¥h±¼conflict line
-  git push origin HEAD:refs/for/ces2015
+  git cherry-pick -e If576a8cf1159d4e6475e838f75f45a4a9cac2671
+  ......fix and add......
+  git commit ~  ¥h±¼conflict line
+  git push origin HEAD:refs/for/develop
   
 
 git  
@@ -28,3 +29,8 @@ git
 ¡´cherry pick 
  git cherry-pick -e 8dd4f5414997b82ed44e81e839d9c2bd24212 //commit id
  git push
+¡´conflict
+ git pull
+ edit file
+ 
+ 

