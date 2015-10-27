@@ -1,0 +1,66 @@
+●取得release-5-portal包版的bz2檔案名稱(console)
+ portal-2.6.14.0-20151026-1747-8afe90bb05.pkg.tar.bz2
+
+●進release-5-portal_i18n->Build with Parameters
+ RELESED_TARBALL_ROOT填寫/file_server/build/release/platform
+ RELESED_TARBALL_NAME填寫bz2檔案名稱
+ I18N_CODES不用改
+
+●建置
+
+●進console，檢查有無錯誤
+
+●無錯誤，到網路磁碟檢查log
+ (\\10.32.38.1\build\release\platform\portal_i18n\portal_i18n-2.6.14.0-20151026-1747-8afe90bb05.log)
+ Symfony part，search new i18n strings
+ Web-mod part，fount "389" merged i18n strings == found {265} translated strings, and {124} new strings
+
+●進Github，取得mydlink_lang
+
+●至master branch檢查上一次release是否已翻譯過回來
+
+●若無找PP確認
+
+●若有則至rd branch，把bz2檔取回並解壓縮後丟入(i18n_symfony、i18n_web-mods)，注意一定要在rd branch
+ (\\10.32.38.1\build\release\platform\portal_i18n\portal_i18n-2.6.14.0-20151026-1747-8afe90bb05.pkg.tar.bz2)
+
+●比對數量，有無空的target
+ git diff i18n_symfony/zh_TW/messages.xml
+ git diff i18n_web-mods/zh_TW/messages.xml
+
+●正確
+ git add .
+ git commit
+  description: 20151027 generate after release-2.6.14.0
+ git push
+
+●進Github檢查commit是否成功
+
+●成功則下tag
+ git tag -am "rd-2.6.14.0" rd-2.6.14.0
+ git push
+●進Github檢查tag是否成功
+
+●寫信給Nick
+ path在Github(https://github.com/mydlink/mydlink_lang)的release->tag
+ 
+ Sample:
+    Dear Nick,
+    
+    Portal release 2.6.14.0 lang pack ready 
+    
+    https://github.com/mydlink/mydlink_lang/releases/tag/rd-2.6.14.0
+    
+    Please download
+    
+    thank you.
+
+ 
+
+
+
+
+ 
+
+
+
