@@ -13,3 +13,10 @@ Url: http://ivan.dev.mydlink.com
 
 重組
 optimized js/css=>./symfony optimize:assets --type=all --env=prod frontend
+
+RDV5 
+Database
+rd-rds-niyazi-2.crd0ozgjw37k.ap-southeast-1.rds.amazonaws.com
+
+Signal
+rd-v5-aio-1.auto.mydlink.com

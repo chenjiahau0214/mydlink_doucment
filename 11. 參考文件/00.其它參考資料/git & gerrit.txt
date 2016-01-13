@@ -2,7 +2,7 @@ gerrit:
 ●更新remote & local fetch
  git fetch
 ●checkout remote branch 
- git checkout -b v247-patch1 origin/v247-patch1
+ git checkout -b v300-fix2 origin/v300-fix2
 ●cherry pick
  先切至target branch(如要把v247 commit copy至v246，target branch為v246)
  git pull
